@@ -31,11 +31,11 @@ You can also change the port in the application properties.
 
 To run the Application, use the below command :
 
-./mvnw spring-boot:run
+**./mvnw spring-boot:run**
 
 To access the API Documentation and try out use the below link after the Application is up :
 
-http://127.0.0.1:8080/swagger-ui.html#/
+**http://127.0.0.1:8080/swagger-ui.html#/**
 
 
 
