@@ -1,5 +1,7 @@
 # robot
-The REST Api has been created using Springboot and Documented API's Using swagger.
+
+The REST Api has been created using Springboot and Documented API's using Swagger.
+
 It was Developed Using Intellij IDEA.
 MySQL database was used to create this.
 
@@ -9,7 +11,7 @@ On the project folder under src/main/resources
 
 EDIT THE FOLLOWING:
 
-#Create Database with name "**robot_production**"
+#Create Database with name "**robot_production**", also you can edit the DB IP address
 spring.datasource.url=jdbc:mysql://127.0.0.1:3306/**robot_production**?autoReconnect=true&&zeroDateTimeBehavior=convertToNull
 
 #You can modify the db user to suit your MySQL user
@@ -23,4 +25,17 @@ NB; in my case I used the XAMPP MySQL which user is root and has no password
 The Hibernate ORM handles database tables creation and other db operations.
 
 
-To run the Application you can build and run
+To run the Application, use the below command :
+
+./mvnw spring-boot:run
+
+To access the API Documentation and try out use the below link after the Application is up :
+
+http://127.0.0.1:8080/swagger-ui.html#/
+
+
+
+
+
+
+
