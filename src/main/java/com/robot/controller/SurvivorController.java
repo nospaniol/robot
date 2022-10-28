@@ -234,8 +234,12 @@ public class SurvivorController {
                 return new ResponseEntity(robot_response, HttpStatus.OK);
             }
 
-
-
+            List<SurvivorReports> similarReportedCases = survivorInfectedService.findByReporterAndInfected(reportingSurvivor,infectedSurvivor);
+            if (similarReportedCases.size()>0) {
+                robot_response.setTitle("error");
+                robot_response.setMessage("please, Same person can not report one individual twice!");
+                return new ResponseEntity(robot_response, HttpStatus.OK);
+            }
 
             SurvivorReports flagReport = new SurvivorReports();
             flagReport.setReporter(reportingSurvivor);

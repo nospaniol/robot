@@ -69,6 +69,11 @@ public class SurvivorInfectedServiceImpl implements SurvivorInfectedService {
     }
 
     @Override
+    public List<SurvivorReports> findByReporterAndInfected(Survivor reporter, Survivor infected) {
+        return survivorInfectedRepository.findByReporterAndInfected(reporter,infected);
+    }
+
+    @Override
     public SurvivorReports findByInfetced(Survivor survivor) {
         return survivorInfectedRepository.findByReporter(survivor);
     }

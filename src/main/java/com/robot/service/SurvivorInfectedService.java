@@ -4,12 +4,14 @@ import com.robot.model.Survivor;
 import com.robot.model.SurvivorReports;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public interface SurvivorInfectedService extends GenericService<SurvivorReports> {
 
     SurvivorReports findByReporter(Survivor survivor);
 
-    SurvivorReports findByReporterAndInfetced(Survivor reporter,Survivor infected);
+    List<SurvivorReports> findByReporterAndInfected(Survivor reporter, Survivor infected);
 
     SurvivorReports findByInfetced(Survivor survivor);
 
