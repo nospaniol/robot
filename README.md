@@ -9,6 +9,7 @@ To Run The application you need to do the following:
 
 On the project folder under src/main/resources
 
+
 EDIT THE FOLLOWING:
 
 #Create Database with name "**robot_production**", also you can edit the DB IP address
@@ -23,6 +24,9 @@ NB; in my case I used the XAMPP MySQL which user is root and has no password
 
 
 The Hibernate ORM handles database tables creation and other db operations.
+
+
+You can also change the port in the application properties.
 
 
 To run the Application, use the below command :
